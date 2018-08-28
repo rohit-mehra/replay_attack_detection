@@ -1,0 +1,146 @@
+
+********************************************************                                                     
+IMPORTANT NOTICE
+
+This is the VERSION 2 of the ASVspoof 2017 database. Please indicate explicitly the version number
+of the database used in your papers. Please, refer to 'CHANGE_LOG_V2.txt' for further information about the changes introduced in this VERSION 2.
+********************************************************
+
+Welcome to the 2017 automatic speaker verification spoofing and countermeasures challenge (ASVspoof2017) database VERSION 2. 
+
+Here is a description of training, development, and evaluation data.
+
+1. ASVspoof2017_V2_train, ASVspoof2017_V2_dev and ASVspoof2017_V2_eval directories contain audio files used for training, development and evaluation (T_*.wav, D_*.wav and E_*.wav, respectively). The waveforms in the directories are in the standard RIFF/WAVE format. The sampling rate is 16 kHz, and stored in 16-bit format.
+
+    
+2. protocol directory contains protocol files in ASCII format for training, development and evaluation.
+
+   protocol_V2/ASVspoof2017_V2_train.trn.txt: contains a file list to be used to train human and spoofed speech detectors.
+   protocol_V2/ASVspoof2017_V2_dev.trl.txt : contains a development trial list to validate the spoofing detector.
+   protocol_V2/ASVspoof2017_V2_eval.trl.txt : contains an evaluation trial list to evaluate the spoofing detector.
+
+    The three files have the same format and the meaning of each column is listed as follows:
+        1st column: unique file ID
+        2nd column: speech type identifier: genuine means the trial is original speech; spoof means the file is created with replay attack.
+        3rd column: speaker ID
+        4th column: RedDots common phrase ID
+        5th column: Environment ID ('-' for genuine speech)
+        6th column: Playback device ID ('-' for genuine speech)
+        7th column: Recording device ID ('-' for genuine speech)
+
+    The file for each training sample can be located at ASVspoof2017_V2_train/unique_file_ID.wav
+    The file for each development trial sample can be located at ASVspoof2017_V2_dev/unique_file_ID.wav
+    The file for each evaluation trial sample can be located at ASVspoof2017_V2_eval/unique_file_ID.wav
+
+The following is the details of the RedDots common phrase IDs (4th column):
+
+    S01: 'My voice is my password'
+    S02: 'OK Google'
+    S03: 'Only lawyers love millionaires'
+    S04: 'Artificial intelligence is for real'
+    S05: 'Birthday parties have cupcakes and ice cream'
+    S06: 'Actions speak louder than words'
+    S07: 'There is no such thing as a free lunch'
+    S08: 'A watched pot never boils'
+    S09: 'Jealousy has twenty-twenty vision'
+    S10: 'Necessity is the mother of invention'
+
+
+Here is the details of the IDs of Recording Environment, Playback devices and Recording Devices.
+
+Recording Environment (5th column):
+
+    E01: 'Anechoic room'
+    E02: 'Balcony 01'
+    E03: 'Balcony 02'
+    E04: 'Home 07'
+    E05: 'Home 08'
+    E06: 'Cantine'
+    E07: 'Home 01'
+    E08: 'Home 02'
+    E09: 'Home 03'
+    E10: 'Home 04'
+    E11: 'Home 05'
+    E12: 'Home 06'
+    E13: 'Office 01'
+    E14: 'Office 02'
+    E15: 'Office 03'
+    E16: 'Office 04'
+    E17: 'Office 05'
+    E18: 'Office 06'
+    E19: 'Office 07'
+    E20: 'Office 08'
+    E21: 'Office 09'
+    E22: 'Office 10'
+    E23: 'Studio'
+    E24: 'Analog wire 01'
+    E25: 'Analog wire 02'
+    E26: 'Analog wire 03'
+
+Playback Device (6th column):
+
+    P01: 'All-in-one PC speakers'
+    P02: 'Creative A60 speakers'
+    P03: 'Genelec 8020C studio monitor'
+    P04: 'Genelec 8020C studio monitor (2 speakers)'
+    P05: 'Beyerdynamic DT 770 PRO headphones'
+    P06: 'Dell laptop internal speakers'
+    P07: 'Dynaudio BM5A speaker'
+    P08: 'HP Laptop internal speakers'
+    P09: 'VIFA M10MD-39-08 speaker'
+    P10: 'ACER netbook internal speakers'
+    P11: 'BQ Aquaris M5 smartphone'
+    P12: 'Logitech low quality speakers'
+    P13: 'Desktop PC line output'
+    P14: 'Labtec LCS-1050 speakers'
+    P15: 'Edirol MA-15D studio monitor'
+    P16: 'Lenovo Ideatab S6000-H tablet'
+    P17: 'Logitech S120 multimedia speakers'
+    P18: 'MacBook pro internal speakers'
+    P19: 'Altec lansing Orbit USB iML227 portable speaker'
+    P20: 'Samsung GT-I9100 smartphone'
+    P21: 'Samsung GT-P6200 tablet '
+    P22: 'Behringer Truth B2030A studio monitor'
+    P23: 'Focusrite Scarlett 2i2 audio interface line output'
+    P24: 'Focusrite Scarlett 2i4 audio interface line output'
+    P25: 'Genelec 6010A studio monitor'
+    P26: 'AKG K242HD Headset'
+
+Recording Device (7th column):
+
+    R01: 'Zoom H6 handy recorder'
+    R02: 'BQ Aquaris M5 smartphone'
+    R03: 'Low-quality headset'
+    R04: 'Nokia Lumia 635 smartphone'
+    R05: 'Røde NT2 microphone'
+    R06: 'Røde smartLav+ microphone'
+    R07: 'Samsung Galaxy 7s smartphone'
+    R08: 'Desktop PC microphone input'
+    R09: 'Zoom H6 handy recorder with Behringer ECM8000 microphone'
+    R10: 'Zoom H6 handy recorder with MSH-6 microphone'
+    R11: 'Zoom H6 handy recorder with XY microphone'
+    R12: 'iPhone 5c smartphone'
+    R13: 'iPhone 7 plus smartphone'
+    R14: 'iPhone 4 smartphone'
+    R15: 'Logitech C920 webcam'
+    R16: 'miniDSP UMIK-1 microphone'
+    R17: 'Samsung Galaxy Trend 2 smartphone'
+    R18: 'Samsung GT-I9100 smartphone'
+    R19: 'Samsung GT-P6200 tablet'
+    R20: 'Samsung Trend 2 smartphone'
+    R21: 'AKG C3000 microphone'
+    R22: 'SE electronic 2200a microphone'
+    R23: 'Focusrite Scarlett 2i2 interface line input'
+    R24: 'Focusrite Scarlett 2i4 interface line input'
+    R25: 'Zoom HD1 handy recorder'
+
+
+    Participants can use the information in the 3-7th column of the training and development set to tune their systems. However, the final performance is only based on the 2nd column (classification performance of human or spoof). Even if columns 3-7th are also provided for the evaluation set, such information is intended to support further analysis of results rather than to be used for system tuning.
+
+Differently from the 2015 edition (where EERs were first computed per spoofing attack and then averaged to form a single scalar summary), in ASVspoof 2017 the summary EER should be computed from scores pooled across all the trial segments. We recommend to use BOSARIS program (https://sites.google.com/site/bosaristoolkit/) for computing the EERs. 
+
+For details about the task, please refer to the evaluation plan, which is available at: http://www.spoofingchallenge.org/
+
+------------------------------------------------------------------
+
+

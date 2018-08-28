@@ -3,3 +3,4 @@
 data/asvspoof2017/*
 __pycache__
 .ipynb_checkpoints
+!data/asvspoof2017/*.txt

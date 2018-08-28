@@ -1,0 +1,19 @@
+CHANGE LOG
+
+The following is the list of changes introduced in VERSION 2 of the ASVspoof 2017 database:
+
+1st March 2018
+==============
+
+* Updated "protocol_V2.zip" file to fix errors in the labels of some environments on development and evaluation protocols.
+
+9th February 2018
+=================
+
+* COMPLETE IMPROVED METADATA:
+    - Information about replay configurations (playback environment, playback and recording devices) added for the evaluation set in 'ASVspoof2017_V2_eval.trl.txt'.
+    - The categorisation of the replay configurations has been improved and unified (see 'Instructions_V2.txt').
+
+* DATABASE PATCHING:
+    - The complete database has been patched to remove zero-sequence artifacts in the beginning of the wave files.
+    - Empty files T_1000150.wav and T_1001658.wav removed from the training set and protocol.
