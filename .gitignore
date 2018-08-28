@@ -1,0 +1,5 @@
+# exclude
+
+data/asvspoof2017/*
+__pycache__
+.ipynb_checkpoints

@@ -1,0 +1,10 @@
+numpy
+matplotlib
+h5py
+scikit-learn
+scipy
+python_speech_features
+librosa
+soundfile
+wave
+pandas
